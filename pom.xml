@@ -9,9 +9,12 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>consul-client</module>
         <module>eureka-server</module>
         <module>enureka-client</module>
-        <module>consul-client</module>
+        <module>service-user-order</module>
+        <module>service-user</module>
+        <module>service-user-interface</module>
     </modules>
 
     <parent>
@@ -34,7 +37,17 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+
         </dependencies>
     </dependencyManagement>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.springframework.boot</groupId>
+                <artifactId>spring-boot-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
