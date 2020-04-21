@@ -9,5 +9,6 @@ public class Order implements Serializable {
     private Integer id;
     private String name;
     private String orderNu;
+    private String userName;
 
 }

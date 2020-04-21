@@ -19,4 +19,14 @@ public class UserService {
         User user = getUserById(id);
         return user.getName();
     }
+
+    public User getUserByUser(User user1) {
+        User user = new User();
+        user.setId(user1.getId());
+        user.setAge(24);
+        user.setName("铁憨憨"+user.getId());
+        user.setSex("女");
+        return user;
+    }
+
 }
