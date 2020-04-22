@@ -15,6 +15,7 @@ public interface FeignClients {
     @RequestMapping("/getUser")
     public User getUser(Integer id);
 
+
     @RequestMapping("/getUserName")
     public String getUserName(Integer id);
 
